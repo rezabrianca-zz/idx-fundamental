@@ -4,7 +4,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 
 today = pd.to_datetime('today').strftime('%Y-%m-%d')
-company = pd.read_csv('./data/company_code_2020-09-26.csv')
+company = pd.read_csv('./data/company_code_{0}.csv'.format(today))
 
 base_url = 'https://www.reuters.com/companies/{0}.JK/key-metrics'
 
